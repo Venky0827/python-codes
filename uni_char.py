@@ -1,4 +1,4 @@
-def uni_char(s):
+def uni_char(s):  # method 1
     l = len(s)
     seen = []
     i = 0
@@ -11,10 +11,10 @@ def uni_char(s):
     seen = ''.join(seen)
     if s == seen:
         return True
-        
     
-def uni_char2(s):    # another simple method
-  return len(set(s)) == len(s)
+def unique_character2(s):  # method 2
+    return len(set(s)) == len(s)
 
-re =uni_char('abcad')
-print(re)
+r1 = uni_char('abcd')                # method 1 calling
+r2 = unique_character2('askhgsa')    # method 2 calling
+print(r1,r2)
