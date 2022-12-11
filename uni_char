@@ -1,0 +1,20 @@
+def uni_char(s):
+    l = len(s)
+    seen = []
+    i = 0
+    while i < l:
+        if s[i] not in seen:
+            seen.append(s[i])
+        else:
+            return False
+        i +=1
+    seen = ''.join(seen)
+    if s == seen:
+        return True
+        
+    
+def uni_char2(s):    # another simple method
+  return len(set(s)) == len(s)
+
+re =uni_char('abcad')
+print(re)
