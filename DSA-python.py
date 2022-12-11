@@ -21,4 +21,23 @@ class stack(object):
 
 s = stack()
 
-#-------------------- End of stack ---------------------
+#-------------------- Queue ---------------------
+
+class Queue(object):
+
+    def __init__(self):
+        self.items = []
+
+    def IsEmpty(self):
+        return self.items == []
+
+    def Enque(self,item):
+        self.items.insert(0,item)
+
+    def pop(self):
+        self.items.pop()
+
+    def size(self):
+        return len(self.items)
+
+q = Queue()
