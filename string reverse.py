@@ -13,5 +13,6 @@ def rev1(str1):
         
     return ' '.join(words[::-1])
     
-    str1 = input("Enter string :")
-    rev1(str1)
+    
+str1 = input("Enter string :")
+rev1(str1)
